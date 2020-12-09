@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import generatePage from './generatePage';
-import store from '../data/localStore';
+import store from './store';
 
 let buildPage = function () {
   $('#container').html(`<section id="contentbox"></section>

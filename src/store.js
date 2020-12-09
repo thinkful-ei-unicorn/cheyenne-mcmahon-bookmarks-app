@@ -1,4 +1,5 @@
-import persistentStore from './persistentStore';
+import api from "./api";
+
 
 const items = [];
 const sort = 0;
@@ -18,7 +19,7 @@ const deleteItem = function (id) {
 
 const updateItemDataBase = function () {
   this.items = [];
-  return persistentStore.getAllItems().then((fetchedItems) => {
+  return api.getAllItems().then((fetchedItems) => {
     fetchedItems.forEach((item) => this.addItem(item));
   });
 };

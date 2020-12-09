@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-heron/shopping-list-starter/issues"
   },
-  "homepage": "https://github.com/thinkful-ei-heron/shopping-list-starter#readme",
+  "homepage": "https://github.com/thinkful-ei-unicorn/cheyenne-mcmahon-bookmarks-app",
   "devDependencies": {
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",

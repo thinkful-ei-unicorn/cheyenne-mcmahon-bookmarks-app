@@ -1,6 +1,6 @@
-import store from '../data/localStore';
+import store from './store';
 
-//SGENERATORS AND OBJECTS
+//GENERATORS AND OBJECTS
 
 const generateMessageBox = function (message, err) {
   let errClass = err ? 'errMessage' : 'message';

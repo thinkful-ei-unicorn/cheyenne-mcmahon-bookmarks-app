@@ -1,13 +1,13 @@
-require('./styles/basic.css');
-require('./styles/bookmark.css');
-require('./styles/message.css');
-require('./styles/create.css');
-require('./styles/query.css');
+import './styles/basic.css';
+import './styles/bookmark.css';
+import './styles/message.css';
+import './styles/create.css';
+import './styles/query.css';
 
 import 'normalize.css';
 import $ from 'jquery';
-import store from './data/localStore';
-import renderPage from './page/renderPage';
+import store from './store';
+import renderPage from './renderPage';
 import eventHandler from './eventHandler';
 
 const main = function () {
