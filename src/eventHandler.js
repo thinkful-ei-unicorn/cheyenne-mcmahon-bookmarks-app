@@ -19,7 +19,7 @@ const handleTransitionEvents = function () {
   });
   $('main').on('click', '#cancel-item-button', (e) => {
     e.preventDefault();
-
+    logErrorMessage('');
 
     renderPage.render(0);
   });
@@ -115,5 +115,6 @@ const handleBookmarkEvents = function () {
 export default {
   handleTransitionEvents,
   handleSubmitEvents,
-  handleBookmarkEvents
+  handleBookmarkEvents,
+  logErrorMessage
 };
